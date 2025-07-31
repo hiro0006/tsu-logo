@@ -1,0 +1,46 @@
+<section class="swipe-section bg-gray-50 py-20 content-top-aligned">
+    <div class="form-container">
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-2">お問い合わせ</h2>
+        <p class="text-lg text-sky-500 text-center mb-8">Contact Us</p>
+        <form id="contactForm" action="https://formspree.io/f/mqalllbr" method="POST" class="space-y-6">
+            <div>
+                <label for="name" class="block text-gray-700 text-sm font-medium mb-2">お名前</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="山田 太郎" required>
+            </div>
+            <div>
+                <label for="companyName" class="block text-gray-700 text-sm font-medium mb-2">会社名</label>
+                <input type="text" id="companyName" name="companyName" class="form-input" placeholder="株式会社〇〇">
+            </div>
+            <div>
+                <label for="emailLocal" class="block text-gray-700 text-sm font-medium mb-2">メールアドレス</label>
+                <div class="email-input-group">
+                    <input type="text" id="emailLocal" name="emailLocal" class="form-input" placeholder="yourname" required>
+                    <span class="text-gray-700">@</span>
+                    <select id="emailDomain" name="emailDomain" class="form-input" required>
+                        <option value="">ドメインを選択</option>
+                        <option value="gmail.com">gmail.com</option>
+                        <option value="yahoo.co.jp">yahoo.co.jp</option>
+                        <option value="docomo.ne.jp">docomo.ne.jp</option>
+                        <option value="ezweb.ne.jp">ezweb.ne.jp</option>
+                        <option value="softbank.ne.jp">softbank.ne.jp</option>
+                        <option value="other">その他</option>
+                    </select>
+                    <input type="text" id="emailCustomDomain" name="emailCustomDomain" class="form-input hidden" placeholder="custom.com">
+                </div>
+            </div>
+            <div>
+                <label for="subject" class="block text-gray-700 text-sm font-medium mb-2">件名</label>
+                <input type="text" id="subject" name="subject" class="form-input" placeholder="お問い合わせ内容の件名" required>
+            </div>
+            <div>
+                <label for="message" class="block text-gray-700 text-sm font-medium mb-2">メッセージ</label>
+                <textarea id="message" name="message" class="form-input form-textarea" placeholder="お問い合わせ内容を詳しくご記入ください" required></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="submit-button">
+                    送信
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
